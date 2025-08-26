@@ -68,7 +68,7 @@ const AboutPage = () => {
 						<div className={styles.experienceBlock}>
 							<p className={styles.highlight}>Rigi</p>
 							<p className={styles.roleLocation}>
-								India — Software Developer II (Feb 2023 – Jul
+								India — Software Developer II (Feb 2023 – Jun
 								2024)
 							</p>
 							<ul className={styles.bulletList}>
