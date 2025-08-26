@@ -65,7 +65,7 @@ const GithubPage = ({ repos, user }: GithubPageProps) => {
 				</div>
 				<div className={styles.contributions}>
 					<GitHubCalendar
-						username={process.env.PUBLIC_GITHUB_USERNAME!}
+						username={process.env.NEXT_PUBLIC_GITHUB_USERNAME!}
 						// hideColorLegend
 						// hideMonthLabels
 						colorScheme="dark"
@@ -97,12 +97,12 @@ const GithubPage = ({ repos, user }: GithubPageProps) => {
 
 export async function getStaticProps() {
 	const userRes = await fetch(
-		`https://api.github.com/users/${process.env.PUBLIC_GITHUB_USERNAME}`
+		`https://api.github.com/users/${process.env.NEXT_PUBLIC_GITHUB_USERNAME}`
 	);
 	const user = await userRes.json();
 
 	const repoRes = await fetch(
-		`https://api.github.com/users/${process.env.PUBLIC_GITHUB_USERNAME}/repos?sort=pushed&per_page=6`
+		`https://api.github.com/users/${process.env.NEXT_PUBLIC_GITHUB_USERNAME}/repos?sort=pushed&per_page=6`
 	);
 	const repos = await repoRes.json();
 
