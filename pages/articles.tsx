@@ -1,7 +1,5 @@
 import ArticleCard from "@/components/ArticleCard";
-
 import { Article } from "@/types";
-
 import styles from "@/styles/ArticlesPage.module.css";
 
 interface ArticlesPageProps {
@@ -15,12 +13,12 @@ const ArticlesPage = ({ articles }: ArticlesPageProps) => {
 			<p className={styles.pageSubtitle}>
 				Recent posts from{" "}
 				<a
-					href="https://dev.to/{username}"
+					href="https://medium.com/@rajatmishra343"
 					target="_blank"
 					rel="noopener"
-					className={styles.underline}
+					className={styles.highlight}
 				>
-					dev.to
+					Medium
 				</a>{" "}
 				where I share insights and tutorials about web development.
 			</p>
@@ -34,20 +32,34 @@ const ArticlesPage = ({ articles }: ArticlesPageProps) => {
 };
 
 export async function getStaticProps() {
-	const res = await fetch(
-		"https://dev.to/api/articles/me/published?per_page=6",
+	const articles: Article[] = [
 		{
-			headers: {
-				"api-key": process.env.DEV_TO_API_KEY!,
-			},
-		}
-	);
-
-	const data = await res.json();
+			id: "1",
+			title: "Function Composition and Currying in JavaScript",
+			description:
+				"Explore the powerful concepts of function composition and currying in JavaScript. Learn how these functional programming techniques can make your code more modular, reusable, and easier to understand.",
+			cover_image: "/screenshot/currying.png",
+			url: "https://medium.com/@rajatmishra343/function-composition-and-currying-in-javascript-a8a6934e5548",
+			page_views_count: 940,
+			public_reactions_count: 1,
+			comments_count: 1,
+		},
+		{
+			id: "2",
+			title: "Optimize Docker Builds for Node and React Environments",
+			description:
+				"Learn advanced Docker optimization techniques for Node.js and React applications. Discover how to reduce build times, minimize image sizes, and improve deployment efficiency.",
+			cover_image: "/screenshot/docker.jpg",
+			url: "https://medium.com/@rajatmishra343/optimize-docker-builds-for-node-and-react-environments-5ab5de90ce06",
+			page_views_count: 1480,
+			public_reactions_count: 31,
+			comments_count: 0,
+		},
+	];
 
 	return {
-		props: { title: "Articles", articles: data },
-		revalidate: 60,
+		props: { title: "Articles", articles },
+		revalidate: 86400, // Update once per day
 	};
 }
 
