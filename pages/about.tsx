@@ -154,9 +154,9 @@ const AboutPage = () => {
 					<section className={styles.section}>
 						<h2 className={styles.sectionTitle}>Beyond Code</h2>
 						<p className={styles.paragraph}>
-							Aside from programming, I like to play soccer, video
-							games, watch basketball, f1 etc and listen to calm
-							piano music or just laze around.
+							Outside of programming, I enjoy playing soccer and
+							video games, watching basketball and Formula 1,
+							listening to calm piano music, or simply relaxing.
 						</p>
 					</section>
 				</div>
