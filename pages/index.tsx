@@ -2,12 +2,18 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { VscArrowRight } from "react-icons/vsc";
 
+import { technologies } from "@/data/technologies";
 import styles from "@/styles/HomePage.module.css";
 
 export default function HomePage() {
 	const [activeLineIndex, setActiveLineIndex] = useState(0);
 
 	const codeLines = [
+		{
+			code: "import { technologies } from '@/data/technologies';",
+			type: "import-statement",
+		},
+		{ code: "", type: "blank" },
 		{ code: "const HomePage = () => {", type: "function" },
 		{
 			code: "  const [isLoaded, setIsLoaded] = useState(true);",
@@ -40,6 +46,12 @@ export default function HomePage() {
 		{ code: '      <div className="cta">', type: "object-method" },
 		{
 			code: '        <Link href="/projects">View Projects</Link>',
+			type: "object-method",
+		},
+		{ code: "      </div>", type: "object-method" },
+		{ code: '      <div className="tech-stack">', type: "object-method" },
+		{
+			code: "        {technologies.map(tech => <span>{tech.name}</span>)}",
 			type: "object-method",
 		},
 		{ code: "      </div>", type: "object-method" },
@@ -120,6 +132,27 @@ export default function HomePage() {
 						<Link href="/projects" className={styles.primaryLink}>
 							View Projects <VscArrowRight />
 						</Link>
+					</div>
+
+					{/* Technologies Stack */}
+					<div className={styles.techStack}>
+						<h3 className={styles.techStackTitle}>
+							Technologies I&apos;ve Worked With:
+						</h3>
+						<div className={styles.techBadges}>
+							{technologies.map((tech, index) => (
+								<span
+									key={index}
+									className={styles.techBadge}
+									style={{
+										backgroundColor: tech.backgroundColor,
+										color: tech.color,
+									}}
+								>
+									{tech.name}
+								</span>
+							))}
+						</div>
 					</div>
 				</div>
 			</div>
