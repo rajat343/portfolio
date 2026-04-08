@@ -172,8 +172,7 @@ const AboutPage = () => {
 
 						<div className={styles.educationBlock}>
 							<p className={styles.highlight}>
-								Master of Science, Computer Software
-								Engineering
+								Master of Science, Computer Software Engineering
 							</p>
 							<p className={styles.roleLocation}>
 								San Jose State University, San Jose, CA — Aug
@@ -183,8 +182,8 @@ const AboutPage = () => {
 
 						<div className={styles.educationBlock}>
 							<p className={styles.highlight}>
-								Bachelor of Engineering, Information Science
-								and Engineering
+								Bachelor of Engineering, Information Science and
+								Engineering
 							</p>
 							<p className={styles.roleLocation}>
 								PES Institute of Technology, Bangalore, India —

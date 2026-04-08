@@ -8,6 +8,7 @@ import {
   VscCode,
   VscFiles,
   VscEdit,
+  VscFile,
 } from 'react-icons/vsc';
 
 import styles from '@/styles/Sidebar.module.css';
@@ -22,6 +23,7 @@ const sidebarTopItems = [
 
 const sidebarBottomItems = [
   { Icon: VscAccount, path: '/about' },
+  { Icon: VscFile, path: '/resume' },
   { Icon: VscSettings, path: '/settings' },
 ];
 
