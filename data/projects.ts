@@ -16,9 +16,17 @@ export const projects: Project[] = [
 		slug: "portfolio",
 	},
 	{
+		title: "RecruiTech",
+		description:
+			"End to end AI recruiting platform with distributed AI agents using CrewAI, orchestrated via Kafka and Airflow, enabling RAG job matching, WebRTC video interviews, gRPC and GraphQL APIs, and Elasticsearch for full-text search.",
+		logo: "/logos/recruitech_logo.svg",
+		link: "https://github.com/rajat343/RecruiTech",
+		slug: "RecruiTech",
+	},
+	{
 		title: "JIRA Automation Using Open AI",
 		description:
-			"An AI-driven meeting summarizer tool with microservices, using LLM models for audio transcription, SQS for task queuing, integrating with Jira API, and deployed on AWS with real-time processing.",
+			"An AI-driven meeting summarization platform using Python and Node.js microservices, leveraging LLMs for transcription and summarization, with SQS for async processing and Jira API integration, deployed on AWS ECS.",
 		logo: "/logos/jira.svg",
 		link: "https://github.com/rajat343/Jira-Automation",
 		slug: "Jira-Automation",

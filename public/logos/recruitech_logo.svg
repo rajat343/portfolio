@@ -1,0 +1,32 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .icon {
+      stroke: #2563eb;
+      stroke-width: 4;
+      fill: none;
+    }
+    .node {
+      fill: #2563eb;
+    }
+    .node-center {
+      fill: #60a5fa;
+    }
+  </style>
+
+  <!-- Network nodes representing recruiting connections -->
+  <circle cx="50" cy="50" r="8" class="node-center"/>
+  
+  <!-- Top nodes -->
+  <circle cx="30" cy="25" r="6" class="node"/>
+  <circle cx="70" cy="25" r="6" class="node"/>
+  
+  <!-- Bottom nodes -->
+  <circle cx="30" cy="75" r="6" class="node"/>
+  <circle cx="70" cy="75" r="6" class="node"/>
+  
+  <!-- Connecting lines -->
+  <line x1="50" y1="50" x2="30" y2="25" class="icon"/>
+  <line x1="50" y1="50" x2="70" y2="25" class="icon"/>
+  <line x1="50" y1="50" x2="30" y2="75" class="icon"/>
+  <line x1="50" y1="50" x2="70" y2="75" class="icon"/>
+</svg>

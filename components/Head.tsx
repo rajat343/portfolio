@@ -21,7 +21,7 @@ const CustomHead = ({ title }: CustomHeadProps) => {
 				property="og:description"
 				content="Full-stack developer building scalable, high-performance web applications with intuitive user experiences."
 			/>
-			<meta property="og:image" content="https://imgur.com/4zi5KkQ.png" />
+			<meta property="og:image" content="/screenshot/preview_image.png" />
 		</Head>
 	);
 };

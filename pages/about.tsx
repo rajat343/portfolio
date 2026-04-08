@@ -14,18 +14,17 @@ const AboutPage = () => {
 							California.
 						</p>
 						<p className={styles.paragraph}>
-							I&apos;m a Masters student in software engineering
-							and seasoned software developer with 4+ years of
-							experience in Agile and Scrum methodologies. Skilled
-							in JavaScript / Typescript, Java, Go, and Python,
-							with expertise in frameworks like Node.js, Spring
-							Boot, and React. Proficient in AWS, Kubernetes,
-							Docker, and database optimization, for both SQL and
-							NoSQL databases. Having contributed to startups
-							across various growth stages, I excel in fast-paced,
-							high-expectation environments and enjoy exploring
-							products end-to-end, enabling rapid issue
-							identification and resolution.
+							Software Engineer with 4+ years of experience
+							architecting and shipping production systems at
+							scale. M.S. in Software Engineering from San Jose
+							State University. Deep expertise across the full
+							stack — JavaScript/TypeScript, Java, Go, and Python
+							— with a proven track record building
+							high-availability services on AWS using Kubernetes,
+							Docker, Node.js, Django, Spring Boot, and React.
+							Thrives in fast-moving Agile teams and brings a
+							strong engineering instinct for scalability,
+							reliability, and clean system design.
 						</p>
 					</section>
 
@@ -35,31 +34,31 @@ const AboutPage = () => {
 						<div className={styles.experienceBlock}>
 							<p className={styles.highlight}>Skydio</p>
 							<p className={styles.roleLocation}>
-								San Mateo, CA, USA — Software Developer Intern
-								(Jun 2025 – Present)
+								San Mateo, CA, USA — Software Engineer Intern
+								(Jun 2025 – Dec 2025)
 							</p>
 							<ul className={styles.bulletList}>
 								<li>
-									Built full-stack employee offboarding system
-									with Node.js, React, and PostgreSQL on
-									Kubernetes using Docker containers,
-									integrating DocuSign/Workday APIs to cut
-									document creation time by 90%.
+									Built a real-time subject tracking system
+									for the Skydio X-10 autonomous drone using
+									Go, Python, and GPT-4, achieving 95%
+									accuracy at 60 FPS with multi-threaded
+									processing and natural-language prompts.
 								</li>
 								<li>
-									Developed Databricks dashboards with Python,
-									SQL, and HTML/CSS to integrate compensation
-									data with market benchmarks, delivering
-									interactive visualizations across 15+ job
-									families and 200K+ records.
+									Designed and delivered an LLM-powered
+									compensation tool in Python Streamlit using
+									LangChain and FAISS to match job
+									descriptions across 10K+ roles (200K+
+									records), delivering salary insights with
+									feedback-driven refinement.
 								</li>
 								<li>
-									Engineered autonomous multi-threaded subject
-									tracking system for Skydio X10 drone using
-									Go, Python, and GPT-4, enabling real-time
-									object identification and tracking via
-									natural language prompts with parallel image
-									processing and k-nearest neighbors matching.
+									Shipped a production offboarding platform
+									(Node.js, React, Typescript, PostgreSQL on
+									Kubernetes) automating workflows via
+									DocuSign and Workday API integrations,
+									cutting document creation time by 90%.
 								</li>
 							</ul>
 						</div>
@@ -68,32 +67,38 @@ const AboutPage = () => {
 						<div className={styles.experienceBlock}>
 							<p className={styles.highlight}>Rigi</p>
 							<p className={styles.roleLocation}>
-								India — Software Developer II (Feb 2023 – Jun
-								2024)
+								Bengaluru, India — Software Engineer II (Feb
+								2023 – Jun 2024)
 							</p>
 							<ul className={styles.bulletList}>
 								<li>
-									Reduced video processing costs by 40%+ by
-									implementing an in-house HLS transcoder with
-									FFmpeg on AWS EC2, eliminating dual-format
-									processing overhead.
+									Led development of an in-house HLS
+									transcoding pipeline with FFmpeg on AWS EC2,
+									processing 10K+ videos monthly at 2x faster
+									speeds while cutting costs by 40% and
+									eliminating dual-format overhead.
 								</li>
 								<li>
-									Scaled video watch duration system with
-									Redis events, handling data from 5M+ devices
-									without overloading the database.
+									Architected and owned a Redis-based watch
+									progress system handling 5M+ concurrent
+									devices and 50M+ daily events, enabling
+									seamless cross-device video resumption with
+									sub-second latency while preventing database
+									overload.
 								</li>
 								<li>
-									Streamlined invoicing system with serverless
-									Lambda functions in Go and Python, cutting
-									cloud costs by 80% and scaling to 2M+
-									requests per week.
+									Redesigned the invoicing system with AWS
+									Lambda serverless architecture, cutting
+									cloud costs by 80% while auto-scaling to 2M+
+									weekly requests with zero infrastructure
+									management.
 								</li>
 								<li>
-									Devised CI/CD pipelines with GitHub
-									Workflows and AWS CodeDeploy, enhancing
-									deployment efficiency for containerized
-									microservices in Kubernetes by 35%.
+									Built automated CI/CD pipelines with testing
+									and deployment for containerized
+									microservices using GitHub Actions, AWS
+									CodeDeploy, Jest, and Kubernetes, reducing
+									deployment time by 35%.
 								</li>
 							</ul>
 						</div>
@@ -102,23 +107,30 @@ const AboutPage = () => {
 						<div className={styles.experienceBlock}>
 							<p className={styles.highlight}>Cutshort</p>
 							<p className={styles.roleLocation}>
-								India — Backend Developer (Aug 2022 – Jan 2023)
+								Pune, India — Backend Developer (Aug 2022 – Jan
+								2023)
 							</p>
 							<ul className={styles.bulletList}>
 								<li>
-									Engineered a Java Spring Boot communication
-									service with 99.9% uptime, handling 1M+ API
-									calls weekly.
+									Transformed a legacy mailing system into
+									Java Spring Boot microservices with
+									independent scaling and deployment,
+									achieving 99.9% uptime while processing 1M+
+									weekly requests at sub-100ms latency.
 								</li>
 								<li>
-									Transformed legacy mailing system into
-									microservices, improving reliability with
-									independent scaling and deployment, and
-									boosting speed by 60%.
+									Implemented Terraform-based Infrastructure
+									as Code for AWS (EC2, Lambda, RDS), enabling
+									reproducible deployments across staging, and
+									production environments and reducing
+									provisioning errors by 80%.
 								</li>
 								<li>
-									Optimized MongoDB queries with aggregation
-									and indexing, cutting query time by 40%.
+									Optimized MongoDB query performance by 40%
+									by consolidating multiple database calls
+									into single aggregation pipelines with
+									strategic indexing, dramatically reducing
+									latency for complex queries.
 								</li>
 							</ul>
 						</div>
@@ -127,25 +139,29 @@ const AboutPage = () => {
 						<div className={styles.experienceBlock}>
 							<p className={styles.highlight}>Mygate</p>
 							<p className={styles.roleLocation}>
-								India — Software Developer (Jul 2020 – Aug 2022)
+								Bengaluru, India — Software Developer (Jul 2020
+								– Aug 2022)
 							</p>
 							<ul className={styles.bulletList}>
 								<li>
-									Implemented data pipelines with Node.js,
-									Kafka, AWS Kinesis, and Glue to process 30M+
-									daily real-time events for analytics and
-									decision-making.
+									Developed scalable data pipelines using
+									Node.js (Javascript), Kafka, AWS Kinesis,
+									and Glue to process 30M+ daily events in
+									real-time, enabling analytics dashboards and
+									data-driven decision-making for 2M+
+									residents.
 								</li>
 								<li>
-									Converted AWS S3 data from JSON to Apache
-									Parquet, lowering storage costs by 80%+ and
-									improving query performance by 10% with AWS
-									Athena.
+									Reduced AWS S3 storage costs by 80% by
+									converting JSON data to compressed Apache
+									Parquet format, enhancing query performance
+									with AWS Athena by 10%.
 								</li>
 								<li>
-									Built a CRM using NestJS (TypeScript) and
-									BullMQ, boosting task efficiency and
-									reducing inventory issues by 30%.
+									Deployed monitoring tools like Prometheus
+									and Grafana on AWS Linux using Docker,
+									improving system observability and reducing
+									incident resolution time by over 40%.
 								</li>
 							</ul>
 						</div>

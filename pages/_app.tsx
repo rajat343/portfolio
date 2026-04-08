@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import type { AppProps } from "next/app";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 import Layout from "@/components/Layout";
 import Head from "@/components/Head";
@@ -19,6 +21,8 @@ function MyApp({ Component, pageProps }: AppProps) {
 		<Layout>
 			<Head title={`Rajat Mishra | ${pageProps.title}`} />
 			<Component {...pageProps} />
+			<SpeedInsights />
+			<Analytics />
 		</Layout>
 	);
 }
