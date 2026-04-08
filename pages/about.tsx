@@ -168,6 +168,32 @@ const AboutPage = () => {
 					</section>
 
 					<section className={styles.section}>
+						<h2 className={styles.sectionTitle}>Education</h2>
+
+						<div className={styles.educationBlock}>
+							<p className={styles.highlight}>
+								Master of Science, Computer Software
+								Engineering
+							</p>
+							<p className={styles.roleLocation}>
+								San Jose State University, San Jose, CA — Aug
+								2024 – May 2026
+							</p>
+						</div>
+
+						<div className={styles.educationBlock}>
+							<p className={styles.highlight}>
+								Bachelor of Engineering, Information Science
+								and Engineering
+							</p>
+							<p className={styles.roleLocation}>
+								PES Institute of Technology, Bangalore, India —
+								Aug 2016 – Jul 2020
+							</p>
+						</div>
+					</section>
+
+					<section className={styles.section}>
 						<h2 className={styles.sectionTitle}>Beyond Code</h2>
 						<p className={styles.paragraph}>
 							Outside of programming, I enjoy playing soccer and
