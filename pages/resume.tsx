@@ -1,7 +1,7 @@
 import styles from "@/styles/ResumePage.module.css";
 
 const ResumePage = () => {
-	const fileId = "1KQcQZVgasb7DZKkfz69ktg5Hx5FRTdPX";
+	const fileId = "1Bj9w4rLev75ybfomgkmALYiADvmDrjcJ";
 	const resumeUrl = `https://drive.google.com/file/d/${fileId}/preview`;
 	const downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
 
